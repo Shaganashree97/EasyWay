@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transit Card UI</title>
+    <link rel="stylesheet" href="tickets.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-image: url("./tickets.png");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-group">
+      <button class="btn inactive">
+        <!-- <i class="icon-ticket"></i> -->
+        Tickets
+      </button>
+      <button class="btn active">
+        <!-- <i class="icon-card"></i> -->
+        Transit Card
+      </button>
+    </div>
+
+    <!-- Rules and Regulations Section -->
+    <div class="rules-section">
+      <h2>Rules and Regulations</h2>
+      <ul>
+        <li>Tough drug laws with harsh punishments.</li>
+        <li>No importation or sale of chewing gum.</li>
+        <li>Serious penalties for jaywalking and littering.</li>
+        <li>Requiring seatbelt use in automobiles.</li>
+        <li>Bans on smoking in public places.</li>
+        <li>Consideration for cultural and religious sensitivity.</li>
+        <li>Strict penalties for graffiti and vandalism.</li>
+        <li>Only hand-holding in public shows of affection.</li>
+      </ul>
+    </div>
+
+    <!-- Transit Card Section -->
+    <div class="transit-card">
+      <div class="card-info">
+        <div class="card-image">
+          <img src="./profile.png" style="height: 60px" />
+        </div>
+        <div class="card-details">
+          <h3>KyivPassTrans Transit Card</h3>
+          <p>ID: 1234 4567 7890</p>
+          <p>Exp. Date: 21/05/2024</p>
+        </div>
+        <span class="bus-tag">Bus</span>
+      </div>
+      <div class="card-owner">Kosaksi Pasapuzhal</div>
+    </div>
+
+    <!-- Bottom Menu Section -->
+    <!-- <img src="./nav.png" class="nav" /> -->
+    <div class="bottom-menu">
+      <a href="/"
+        ><img src="location.png" style="height: 50px; margin-block: auto"
+      /></a>
+      <div class="menu-icons">
+        <img src="chain.png" style="height: 50px; margin-block: auto" />
+
+        <button class="nearby-btn">Tickets</button>
+        <img src="options.png" style="height: 25px; margin-block: auto" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

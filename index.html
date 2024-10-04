@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exact Map UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body {
+      background-image: url("./image.png");
+    }
+  </style>
+  <body>
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <img src="./search.svg" class="search" />
+      <input type="text" placeholder="Search location or route" />
+    </div>
+
+    <!-- Map Placeholder -->
+    <div class="map">
+      <div class="map-indicator">
+        <img src="./location.svg" />
+      </div>
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+      <img src="./icons.svg" class="icons" />
+    </div>
+    <div class="fab-container">
+      <img src="./plusminus.svg" class="plusminus" />
+    </div>
+    <!-- <div class="fab-container"> -->
+    <!-- <img src="./location.svg" class="loc" /> -->
+    <!-- </div> -->
+
+    <!-- Bottom Menu -->
+    <div class="bottom-menu">
+      <!-- <img src="./nav.png" class="nav" /> -->
+      <div class="bottom-menu">
+        <button class="nearby-btn">Nearby</button>
+        <div class="menu-icons">
+          <img src="chain.png" style="height: 50px; margin-block: auto" />
+          <a href="/tickets.html">
+            <img src="puzzle.png" style="height: 50px; margin-block: auto" />
+          </a>
+          <img src="options.png" style="height: 25px; margin-block: auto" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

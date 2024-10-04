@@ -1,0 +1,173 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef4ff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 100%;
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.search{
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    height: 20px !important;
+
+}
+.search-bar input {
+    width: 90%;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #5868FF;
+    font-size: 16px;
+    color: white;
+    text-emphasis-color: white;
+    padding-left: 40px;
+    padding-block: 15px;
+
+    
+}
+
+::-webkit-input-placeholder, ::-moz-placeholder{
+    color: white !important;
+}
+
+
+/* Map Section */
+.map {
+    /* margin-top: 70px; */
+    width: 100%;
+    /* height: calc(100vh - 180px); */
+    /* background-color: #d0e8ff; */
+    position: absolute;
+    bottom:100px;
+
+}
+.map-indicator > img{
+    height: 60px;
+}
+.map-indicator {
+    position: absolute;
+    left: 87%;
+    width: 40px;
+    height: 150px;
+    /* height: 40px; */
+    /* background-color: #4666ff; */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Floating Action Buttons (FABs) */
+.fab-container {
+    position: absolute;
+    top: 140px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.fab {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.fab i {
+    width: 24px;
+    height: 24px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+/* Bottom Navigation */
+.bottom-menu {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    width: 90%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 30px;
+    /* margin-inline:30px; */
+    padding-inline: 10px;
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    border-radius: 50px;
+    background-color: white;
+}
+.bottom-menu > svg{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    width: 100%;
+
+}
+.nearby-btn {
+    background-color: #607aff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.menu-icons {
+    display: flex;
+    gap: 25px;
+}
+
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.icons{
+  height:300px;
+}
+
+.plusminus{
+    height: 100px;
+    /* position: absolute; */
+    /* bottom: 100px; */
+    margin-top: 600%;
+}
+.loc{
+    /* height: 100px; */
+    z-index: 10;
+        /* position: absolute; */
+        /* bottom: 100px; */
+        margin-top: 800%;
+}

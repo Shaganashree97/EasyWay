@@ -1,0 +1,267 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e5f2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+/* Rules Section */
+.rules-section {
+    width: 90%;
+    margin-top: 20px;
+    padding: 20px;
+    /* background-color: #cae7ff; */
+    border-radius: 15px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.rules-section h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rules-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.rules-section ul li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Transit Card Section */
+.transit-card {
+    width: 90%;
+    margin-top: 20px;
+    background-color: #4666ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-image {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('https://via.placeholder.com/60');
+    background-size: cover;
+}
+
+.card-details {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.card-details h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.card-details p {
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+
+.bus-tag {
+    background-color: #33cc33;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+/* General button group styling */
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4265ff; /* Background color similar to the previous container */
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+/* Common button styles */
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+/* Inactive button (like 'Tickets') */
+.btn.inactive {
+    background-color: white;
+    /* color: #888; */
+    border: 1px solid white;
+}
+
+/* Active button (like 'Transit Card') */
+.btn.active {
+    background-color: #84b2ff;
+    color: white;
+    border: 1px solid #84b2ff;
+}
+
+/* Styling for icons (you can replace these with actual SVGs or icon fonts) */
+.icon-ticket {
+    width: 20px;
+    height: 20px;
+    background-color: grey; /* Placeholder for icon color */
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.icon-card {
+    width: 20px;
+    height: 20px;
+    background-color: white; /* Placeholder for icon color */
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+.card-owner {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Bottom Menu Section */
+/* .bottom-menu { */
+    /* width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+} */
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-btn i {
+    width: 24px;
+    height: 24px;
+    background-color: #607aff;
+    border-radius: 50%;
+}
+
+/* Example Icons for Buttons (You can replace these with actual SVGs or icon fonts) */
+.icon-back {
+    display: inline-block;
+    background-color: lightgray;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.icon-tickets {
+    display: inline-block;
+    background-color: lightgray;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.icon-options {
+    display: inline-block;
+    background-color: lightgray;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+/* General button group styling */
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Background color similar to the previous container */
+    padding: 10px;
+    padding-inline: 15px;
+    border-radius: 50px;
+}
+
+/* Common button styles */
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+/* Inactive button (like 'Tickets') */
+.btn.inactive {
+    background-color: white;
+    color: #888;
+    border: 1px solid white;
+}
+
+/* Active button (like 'Transit Card') */
+.btn.active {
+    background-color: #84b2ff;
+    color: white;
+    border: 1px solid #84b2ff;
+}
+
+/* Styling for icons (you can replace these with actual SVGs or icon fonts) */
+.icon-ticket {
+    width: 20px;
+    height: 20px;
+    background-color: grey; /* Placeholder for icon color */
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.icon-card {
+    width: 20px;
+    height: 20px;
+    background-color: white; /* Placeholder for icon color */
+    border-radius: 5px;
+    display: inline-block;
+}
